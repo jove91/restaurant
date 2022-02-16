@@ -25,6 +25,11 @@
           justify-content: space-between;
 }
 
+.justify-content-space-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 ul {
   list-style: none;
   -webkit-box-align: center;
@@ -48,7 +53,7 @@ a {
   background-color: #c48924;
 }
 
-/***** HEDER SECTION *****/
+/******************** HEDER SECTION **************************/
 header {
   padding: 40px;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/Images/hero.jpg);
@@ -117,5 +122,91 @@ header hgroup h1 {
   color: white;
   letter-spacing: 2px;
   margin-bottom: 30px;
+}
+
+/******************** Three Column SECTION **************************/
+.three-col-section {
+  padding: 100px 0  200px 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  background-color: #d6d6d6;
+}
+
+.three-col-section .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.three-col-section article {
+  height: 400px;
+  width: 240px;
+  margin: 0 25px;
+  text-align: center;
+}
+
+.three-col-section .article-border {
+  border: 2px solid #f2ac32;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.three-col-section .second-col {
+  -webkit-box-shadow: 16px -9px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 16px -9px 5px 0px rgba(0, 0, 0, 0.75);
+  margin-top: -30px;
+}
+
+.three-col-section .third-col {
+  -webkit-box-shadow: 16px -9px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 16px -9px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.three-col-section .article-info {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  background: white;
+  width: 100%;
+  height: 100%;
+  padding: 50px 10px;
+  -webkit-box-shadow: 16px -9px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 16px -9px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.three-col-section .article-info h2 {
+  font-family: 'Rochester', cursive;
+  color: #f2ac32;
+  margin-bottom: 10px;
+}
+
+.three-col-section .article-info h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.three-col-section .article-info p {
+  color: #6e6e6e;
+  margin-bottom: 20px;
+}
+
+.three-col-section .article-info a {
+  background: transparent;
+  padding: 5px 10px;
+  color: #f2ac32;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
+
+.three-col-section img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
